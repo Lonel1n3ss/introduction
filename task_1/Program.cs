@@ -2,14 +2,15 @@
 
 // Например:78 -> 8; 12 -> 2; 85 -> 8
 
-int num = new Random().Next(10,100);
+int num = new Random().Next(10, 100);
 int a1 = num / 10; // 79 / 10 -> 7,9 -> __7__ 
 int a2 = num % 10; // 79 % 10 -> 7,9 -> __9__
 
 int max = a1;
 
-if(max < a2)
+if (max < a2)
 {
-    max = a2; 
+    max = a2;
 }
 System.Console.WriteLine($"Наибольшая цифра числа {num} -> {max}");
+
